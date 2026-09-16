@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Project — Laureano Lojo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header>
+  <div class="bar wrap">
+    <a class="wordmark" href="index.html">Laureano Lojo</a>
+    <div class="navwrap">
+      <nav>
+        <a href="projects.html" data-en="Work" data-es="Trabajo">Work</a>
+        <a href="index.html#about" data-en="About" data-es="Sobre mí">About</a>
+        <a href="index.html#contact" data-en="Contact" data-es="Contacto">Contact</a>
+      </nav>
+      <div class="langtoggle">
+        <button data-lang="en" class="active">EN</button>
+        <button data-lang="es">ES</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="wrap" id="pd-root">
+  <section class="pd-hero">
+    <a class="pd-back" href="projects.html">← <span data-en="All work" data-es="Todo el trabajo">All work</span></a>
+    <h1 class="pd-title" id="pd-title">—</h1>
+    <div class="pd-meta">
+      <div><span class="k" data-en="Role" data-es="Rol">Role</span><span class="v" id="pd-role-v"></span></div>
+      <div><span class="k" data-en="Category" data-es="Categoría">Category</span><span class="v" id="pd-cat-v"></span></div>
+      <div><span class="k" data-en="Year" data-es="Año">Year</span><span class="v" id="pd-year-v"></span></div>
+    </div>
+    <div class="pd-cover"><img id="pd-cover-img" src="" alt=""></div>
+  </section>
+
+  <section class="pd-body">
+    <p id="pd-desc"></p>
+  </section>
+
+  <section class="pd-gallery" id="pd-gallery"></section>
+
+  <a class="pd-next" id="pd-next-link" href="#">
+    <div>
+      <div class="label" data-en="Next project" data-es="Siguiente proyecto">Next project</div>
+      <div class="name" id="pd-next-name">—</div>
+    </div>
+    <div>↗</div>
+  </a>
+</main>
+
+<footer class="wrap" id="contact">
+  <div class="big"><span data-en="Let's talk —" data-es="Hablemos —">Let's talk —</span> <a href="mailto:hola@laureanolojo.com">hola@laureanolojo.com</a></div>
+  <div class="foot-row">
+    <span>© 2026 Laureano Lojo</span>
+    <div class="socials">
+      <a href="https://instagram.com/laureanolojo" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://tiktok.com/@laureanolojo" target="_blank" rel="noopener">TikTok</a>
+      <a href="https://www.linkedin.com/in/laureano-lojo-a14077158/" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/data.js"></script>
+<script src="assets/main.js"></script>
+</body>
+</html>

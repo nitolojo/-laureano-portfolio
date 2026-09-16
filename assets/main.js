@@ -39,7 +39,14 @@ function initCursor() {
 
   const cursor = document.createElement('div');
   cursor.id = 'cursor';
-  cursor.innerHTML = '<span class="label" data-en="View" data-es="Ver">View</span>';
+  cursor.innerHTML = `
+    <div class="dot"></div>
+    <div class="sparkle-wrap">
+      <svg class="sparkle" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+        <path d="M17 0C17 0 18.2 12 21 15C23.8 17.8 36 19 36 19C36 19 23.8 20.2 21 23C18.2 25.8 17 38 17 38C17 38 15.8 25.8 13 23C10.2 20.2 -2 19 -2 19C-2 19 10.2 17.8 13 15C15.8 12.2 17 0 17 0Z" transform="translate(2,0)"></path>
+        <path d="M32 22C32 22 32.6 27 34 28.4C35.4 29.8 40 30.4 40 30.4C40 30.4 35.4 31 34 32.4C32.6 33.8 32 38.8 32 38.8C32 38.8 31.4 33.8 30 32.4C28.6 31 24 30.4 24 30.4C24 30.4 28.6 29.8 30 28.4C31.4 27 32 22 32 22Z"></path>
+      </svg>
+    </div>`;
   document.body.appendChild(cursor);
 
   window.addEventListener('mousemove', e => {

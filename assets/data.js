@@ -5,8 +5,8 @@ const PROJECTS = [
   {
     slug: 'denodo',
     accent: '#1F3FD6',
-    year: '2019—Now',
-    yearEs: '2019—Hoy',
+    year: '2021—Now',
+    yearEs: '2021—Hoy',
     filter: 'brand',
     title: 'Denodo',
     category: { en: 'Brand & Events', es: 'Marca y eventos' },
@@ -28,8 +28,8 @@ const PROJECTS = [
   {
     slug: 'goodtings',
     accent: '#4AED80',
-    year: '2024—Now',
-    yearEs: '2024—Hoy',
+    year: '2026',
+    yearEs: '2026',
     filter: 'product',
     title: 'goodtings.',
     category: { en: 'Product & Brand — Founder', es: 'Producto y marca — Founder' },

@@ -39,9 +39,10 @@ const PROJECTS = [
       es: 'Una app de manifestación y journaling para iOS, diseñada, construida y publicada en solitario — marca, producto y pitch, un mismo sistema.'
     },
     description: {
-      en: 'goodtings. is my own product, built end to end on React Native, Expo, Firebase and RevenueCat. I designed the brand system around Figtree, a signature green and purple, and soft gradient light \u2014 then carried that system through the app itself, its App Store presence, a pre-seed pitch deck for K-Fund, and a product spec for a Ray-Ban Display companion, goodtings.glass.',
-      es: 'goodtings. es mi propio producto, construido de principio a fin con React Native, Expo, Firebase y RevenueCat. Diseñé el sistema de marca en torno a Figtree, un verde y morado propios, y una luz de degradados suaves \u2014 y llevé ese sistema a la app, su presencia en la App Store, un pitch deck pre-seed para K-Fund, y una spec de producto para un acompañante de Ray-Ban Display, goodtings.glass.'
+      en: 'goodtings. is an iOS app for manifestation and journaling, designed, built and shipped solo \u2014 from the brand system to every screen. It blends soft, intentional visuals with daily rituals like affirmations and milestone tracking, making the everyday practice of journaling feel calm and habit-forming.',
+      es: 'goodtings. es una app de iOS para manifestación y journaling, diseñada, construida y publicada en solitario — desde el sistema de marca hasta cada pantalla. Combina una estética suave e intencional con rituales diarios como afirmaciones y seguimiento de hitos, haciendo que journalear se sienta tranquilo y fácil de mantener como hábito.'
     },
+    link: 'https://goodtings.app/',
     cover: 'assets/images/projects/goodtings/cover.jpg',
     gallery: [
       'assets/images/projects/goodtings/gallery-1.jpg',

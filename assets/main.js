@@ -164,6 +164,14 @@ function initProjectDetail() {
     document.getElementById('pd-cover-img').alt = title;
     document.getElementById('pd-desc').textContent = pick(p.description);
 
+    const linkEl = document.getElementById('pd-link');
+    if (p.link) {
+      linkEl.href = p.link;
+      linkEl.style.display = 'inline-flex';
+    } else {
+      linkEl.style.display = 'none';
+    }
+
     const gal = document.getElementById('pd-gallery');
     gal.innerHTML = p.gallery.map(src => `
       <div class="g"><img src="${src}" alt="${title}" loading="lazy"

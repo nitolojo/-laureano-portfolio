@@ -253,7 +253,7 @@ footer .big a:hover{border-color:var(--accent);color:var(--accent);}
 
 /* ---------- stats block ---------- */
 .stats-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
-.stat{border-top:1px solid var(--line);padding-top:22px;}
+.stat{padding-top:0;}
 .stat-num{font-family:'Space Grotesk',sans-serif;font-size:clamp(40px,6vw,64px);font-weight:600;line-height:1;color:var(--ink);}
 .stat-num .stat-plus{color:var(--accent);}
 .stat-label{margin-top:10px;color:var(--muted);font-size:14px;}

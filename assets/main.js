@@ -185,6 +185,54 @@ function initProjectDetail() {
   render();
 }
 
+/* ---------------- scroll reveal ---------------- */
+function initReveal() {
+  const els = document.querySelectorAll('.reveal');
+  if (!els.length) return;
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in-view');
+        io.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15, rootMargin: '0px 0px -60px 0px' });
+  els.forEach(el => io.observe(el));
+}
+
+/* ---------------- project card tilt ---------------- */
+function initTilt() {
+  const isTouch = window.matchMedia('(hover: none)').matches;
+  if (isTouch) return;
+  document.addEventListener('mousemove', e => {
+    const card = e.target.closest ? e.target.closest('.pcard') : null;
+    if (!card) return;
+    const r = card.getBoundingClientRect();
+    const px = (e.clientX - r.left) / r.width - 0.5;
+    const py = (e.clientY - r.top) / r.height - 0.5;
+    card.style.transform = `rotateY(${px * 8}deg) rotateX(${-py * 8}deg)`;
+  });
+  document.addEventListener('mouseout', e => {
+    const card = e.target.closest ? e.target.closest('.pcard') : null;
+    if (card) card.style.transform = '';
+  });
+}
+
+/* ---------------- magnetic buttons ---------------- */
+function initMagnetic() {
+  const isTouch = window.matchMedia('(hover: none)').matches;
+  if (isTouch) return;
+  document.querySelectorAll('.btn').forEach(btn => {
+    btn.addEventListener('mousemove', e => {
+      const r = btn.getBoundingClientRect();
+      const x = e.clientX - r.left - r.width / 2;
+      const y = e.clientY - r.top - r.height / 2;
+      btn.style.transform = `translate(${x * 0.25}px, ${y * 0.35}px)`;
+    });
+    btn.addEventListener('mouseleave', () => { btn.style.transform = ''; });
+  });
+}
+
 /* ---------------- boot ---------------- */
 document.addEventListener('DOMContentLoaded', () => {
   initLangToggle();
@@ -192,6 +240,9 @@ document.addEventListener('DOMContentLoaded', () => {
   initRotator();
   initFilters();
   initProjectDetail();
+  initReveal();
+  initTilt();
+  initMagnetic();
 
   if (document.getElementById('home-grid')) {
     window.__rerender = () => { renderCards('home-grid', { layout: 'home' }); syncRotatorLang(); };

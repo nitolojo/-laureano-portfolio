@@ -16,8 +16,8 @@ const PROJECTS = [
       es: 'Sistemas de marca, entornos de ferias y pipelines de diseño multilingüe para una empresa global de gestión de datos.'
     },
     description: {
-      en: 'Trilingual graphic designer and visual strategist, driving Denodo\u2019s brand evolution across 30+ markets for five years. I work across brand strategy, immersive event design for conferences like Gartner and AWS, and AI-augmented production with Adobe Firefly and Midjourney \u2014 building full-funnel visual systems for ABM, paid media and sales enablement, with a social-first eye sharpened by running a 120K+ content audience.',
-      es: 'Diseñador gráfico trilingüe y estratega visual, impulsando la evolución de marca de Denodo en más de 30 mercados durante cinco años. Trabajo en estrategia de marca, diseño de eventos inmersivos para conferencias como Gartner y AWS, y producción con IA (Adobe Firefly, Midjourney) — construyendo sistemas visuales de embudo completo para ABM, paid media y sales enablement, con una mirada social-first afilada por gestionar una audiencia de creador de 120K+.'
+      en: 'Graphic designer and visual strategist, driving Denodo\u2019s brand evolution across 30+ markets for five years. I work across brand strategy, immersive event design for conferences like Gartner and AWS, and AI-augmented production \u2014 building full-funnel visual systems for ABM, paid media and sales enablement, with a social-first eye sharpened by running a 120K+ content audience.',
+      es: 'Diseñador gráfico y estratega visual, impulsando la evolución de marca de Denodo en más de 30 mercados durante cinco años. Trabajo en estrategia de marca, diseño de eventos inmersivos para conferencias como Gartner y AWS, y producción con IA — construyendo sistemas visuales de embudo completo para ABM, paid media y sales enablement, con una mirada social-first afilada por gestionar una audiencia de creador de 120K+.'
     },
     cover: 'assets/images/projects/denodo/cover.jpg',
     gallery: [
